@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class StreamMapTest {
     @Test
     public void should_map_to_triple() {
-        //triple ever number in the list
+        //triple every number in the list
         List<Integer> numbers = Arrays.asList(1, 3, 5, 4, 9);
         List<Integer> expectedNumbers = Arrays.asList(3, 9, 15, 12, 27);
 
