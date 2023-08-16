@@ -17,7 +17,9 @@ public class StreamMap {
     }
 
     public List<String> mapLetter(List<Integer> numbers) {
-        return null;
+        return numbers.stream()
+                .map(number ->  Character.toString((char)('a' + number - 1)))
+                .collect(Collectors.toList());
     }
 
     public List<Integer> mapLength(List<String> words) {
