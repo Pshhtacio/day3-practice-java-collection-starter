@@ -18,7 +18,7 @@ public class StreamMap {
 
     public List<String> mapLetter(List<Integer> numbers) {
         return numbers.stream()
-                .map(number ->  Character.toString((char)('a' + number - 1)))
+                .map(ALPHABET::get)
                 .collect(Collectors.toList());
     }
 
